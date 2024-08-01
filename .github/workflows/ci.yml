@@ -17,6 +17,7 @@ jobs:
         DOCKER_USERNAME: ${{secrets.DOCKER_USERNAME}}
         DOCKER_PASSWORD: ${{secrets.DOCKER_PASSWORD}}
       run: echo "${{ env.DOCKER_PASSWORD }}" | docker login -u $DOCKER_USERNAME --password-stdin
+
       
     - name: Build the Docker image
       run: docker build -t nongdev/cicd-pipeline_v2 .
