@@ -12,5 +12,5 @@ app.get('/', (req, res) => {
 })
 
 app.listen(8080, () => {
-    console.log('server running on port 8080 Hello test')
+    console.log('server running on port 8080 Hello test ci cd')
 })
